@@ -158,6 +158,9 @@ vim.opt.scrolloff = 10
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
+--show file path
+vim.keymap.set('n', '<leader>p', "<cmd>echo expand('%:p')<CR>")
+
 -- Move line up/down
 vim.keymap.set('n', '<C-S-Up>', '<cmd>m -2<CR>')
 vim.keymap.set('n', '<C-S-Down>', '<cmd>m +1<CR>')
